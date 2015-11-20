@@ -1,14 +1,14 @@
 run_analysis<- function(){
      ##load files
-     xtest<-read.table("project/test/X_test.txt")
-     ytest<-read.table("project/test/y_test.txt")
-     subjecttest<-read.table("project/test/subject_test.txt")
-     xtrain<-read.table("project/train/X_train.txt")
-     ytrain<-read.table("project/train/y_train.txt")
-     subjecttrain<-read.table("project/train/subject_train.txt")
+     xtest<-read.table("UCI HAR Dataset/test/X_test.txt")
+     ytest<-read.table("UCI HAR Dataset/y_test.txt")
+     subjecttest<-read.table("UCI HAR Dataset/test/subject_test.txt")
+     xtrain<-read.table("UCI HAR Dataset/train/X_train.txt")
+     ytrain<-read.table("UCI HAR Dataset/train/y_train.txt")
+     subjecttrain<-read.table("UCI HAR Dataset/train/subject_train.txt")
      
      ##load names of data
-     features<-read.table("project/features.txt")
+     features<-read.table("UCI HAR Dataset/features.txt")
      
      ##set names of data 
      names(xtest)<-features[,2]
